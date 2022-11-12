@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TICKET</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcurt icon" type="image/x-icon" href="img/n.ico">
+</head>
+<header>
+    <nav>
+        <a href="D:\Programaciòn web\sitio web2\sitio2\pag\paginas\pagina2.html">INICIO</a>
+        <a href="D:\Programaciòn web\sitio web2\sitio2\pag\paginas\index.html">TICKET</a>
+        <a href="D:\Programaciòn web\sitio web2\sitio2\pag\paginas\cuestionario.html">CUESTIONARIO</a>
+    </nav>
+    <section class="textos-header">
+        <h1>Bienvedido</h1>
+        <h2>Elije tus productos favoritos</h2>
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+</header>
+<body>
+<main>
+<section class="textos-tecatillo">
+	<h2>NUEVA CAFETERIA TECATILLO DE MEXICO DE CV</h2>
+	<h2>NEXTENGO 78 STA. CRUZ ACAYUCAN 02770</h2>
+	<h2>AZCAPOTZALCO MEX CDMX RFC MBK066734N09</h2>
+	<h2>UNIDAD SAN JUAN LABOR</h2>
+	<h2>CARR. ZUMP. LOS REYES #500 COL PASEOS</h2>
+	<h2>QUEJAS Y SUGERENCIAS 800 002 034</h2>
+	<h2>REGIMEN FISCAL - 601</h2>
+	<h2>GENERAL DE LEY PERSONAS MORALES</h2>
+	<h2>VENTA EN LINEA</h2>
+	<h1>TECATILLO</h1>
+</section>
+	<center>
+	<div class="table">
+		<table>
+		<thead>
+			<th><label>Producto</label></th>
+			<th><label>Precio</label></th>
+			<th><label>Catidad</label><br></th>
+		</thead>
+		<tbody>
+			<td><input type="text" id="product1" placeholder="Producto"></td>
+			<td><input type="number" id="precio1" placeholder="Precio"></td>
+			<td><input type="number" id="catidad1" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product2" placeholder="Producto"></td>
+			<td><input type="number" id="precio2" placeholder="Precio"></td>
+			<td><input type="number" id="catidad2" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product3" placeholder="Producto"></td>
+			<td><input type="number" id="precio3" placeholder="Precio"></td>
+			<td><input type="number" id="catidad3" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product4" placeholder="Producto"></td>
+			<td><input type="number" id="precio4" placeholder="Precio"></td>
+			<td><input type="number" id="catidad4" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product5" placeholder="Producto"></td>
+			<td><input type="number" id="precio5" placeholder="Precio"></td>
+			<td><input type="number" id="catidad5" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product6" placeholder="Producto"></td>
+			<td><input type="number" id="precio6" placeholder="Precio"></td>
+			<td><input type="number" id="catidad6" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product7" placeholder="Producto"></td>
+			<td><input type="number" id="precio7" placeholder="Precio"></td>
+			<td><input type="number" id="catidad7" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product8" placeholder="Producto"></td>
+			<td><input type="number" id="precio8" placeholder="Precio"></td>
+			<td><input type="number" id="catidad8" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product9" placeholder="Producto"></td>
+			<td><input type="number" id="precio9" placeholder="Precio"></td>
+			<td><input type="number" id="catidad9" placeholder="Catidad"></td>
+		</tbody>
+		<tbody>
+			<td><input type="text" id="product10" placeholder="Producto"></td>
+			<td><input type="number" id="precio10" placeholder="Precio"></td>
+			<td><input type="number" id="catidad10" placeholder="Catidad"></td>
+		</tbody>
+		</table>
+	</div>
+	<div class="tot">
+		<button onclick="tot()" >Total</button>
+		<button onclick="imp()">Impimir tiket</button><br>
+		<p id="iva"></p>
+		<p id="sub"></p>
+		<p id="total"></p>
+		<p id="prom1"></p>
+		<p id="descuento"></p>
+		</div>
+	</center>
+
+<div class="script">
+<script>
+	function tot(){
+		var prec1 = document.getElementById('precio1').value;
+		var prec2 = document.getElementById('precio2').value;
+		var prec3 = document.getElementById('precio3').value;
+		var prec4 = document.getElementById('precio4').value;
+		var prec5 = document.getElementById('precio5').value;
+		var prec6 = document.getElementById('precio6').value;
+		var prec7 = document.getElementById('precio7').value;
+		var prec8 = document.getElementById('precio8').value;
+		var prec9 = document.getElementById('precio9').value;
+		var prec10 = document.getElementById('precio10').value;
+		var cant1 = document.getElementById('catidad1').value;
+		var cant2 = document.getElementById('catidad2').value;
+		var cant3 = document.getElementById('catidad3').value;
+		var cant4 = document.getElementById('catidad4').value;
+		var cant5 = document.getElementById('catidad5').value;
+		var cant6 = document.getElementById('catidad6').value;
+		var cant7 = document.getElementById('catidad7').value;
+		var cant8 = document.getElementById('catidad8').value;
+		var cant9 = document.getElementById('catidad9').value;
+		var cant10 = document.getElementById('catidad10').value;
+		var pre1 = parseFloat(prec1) * parseFloat(cant1);
+		var pre2 = parseFloat(prec2) * parseFloat(cant2);
+		var pre3 = parseFloat(prec3) * parseFloat(cant3);
+		var pre4 = parseFloat(prec4) * parseFloat(cant4);
+		var pre5 = parseFloat(prec5) * parseFloat(cant5);
+		var pre6 = parseFloat(prec6) * parseFloat(cant6);
+		var pre7 = parseFloat(prec7) * parseFloat(cant7);
+		var pre8 = parseFloat(prec8) * parseFloat(cant8);
+		var pre9 = parseFloat(prec9) * parseFloat(cant9);
+		var pre10 = parseFloat(prec10) * parseFloat(cant10);
+		var preciototal = pre1 + pre2 + pre3 + pre4 + pre5 + pre6 + pre7 + pre8 + pre9 + pre10;
+		document.getElementById('sub').innerHTML = "El subtotal es" + "  " + preciototal;
+		var iva = preciototal * 0.16;
+		document.getElementById('iva').innerHTML = "El iva es" + "  " + iva;
+		var resultado = preciototal + iva;
+		document.getElementById('total').innerHTML = "El total es" + "  " + resultado;
+		var descuen = resultado * 0.03;
+		var descuento = resultado - descuen;
+		if (resultado>=1000 && resultado < 1500 ) {
+			document.getElementById('prom1').innerHTML = 'Felicidades ganeste una gorra';
+		}
+		else if (resultado>=1500 && resultado < 2500 ) {
+			document.getElementById('prom1').innerHTML = 'Felicidades ganeste una balon';
+		}
+		else if (resultado>=2500 ) {
+			document.getElementById('prom1').innerHTML = 'Felicidades ganeste un descuento del 3%';
+			document.getElementById('descuento').innerHTML = 'Total a pagar con el descuento' + ' ' + descuento;
+		}
+
+	}
+	function imp(){
+		window.print()
+	}
+</script>
+</div>
+</main>
+<footer>
+    <div class="contenedor-info">
+        <div class="content-tienda">
+            <h4>Phone</h4>
+            <p>13214156</p>
+        </div>
+        <div class="content-tienda">
+            <h4>Email</h4>
+            <p>diana@gmal.com</p>
+        </div>
+        <div class="content-tienda">
+            <h4>Location</h4>
+            <p>Zumpango, Melchor Ocampo</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">&copy; Diana|Jazmin|Lazaro|Ramirez</h2>
+</footer>
+</body>
+</html>
